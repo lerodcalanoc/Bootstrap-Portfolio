@@ -46,20 +46,22 @@
     <section class="main-section">
       <h1 class="animated slideInDown">Contact</h1>
 
-      <form id="contact-form">
+      <form id="contact-form" method="POST" data-netlify="true">
         <ul>
           <li>
             <label for="name" class="animated pulse">Name</label>
-            <input type="text" id="name" name="name" placeholder="Jason Lee Scott" required="required">
+            <input type="text" id="name" name="name" placeholder="Name" required="required">
           </li>
           <li>
             <label for="email" class="animated pulse">Email</label>
-            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+            <input type="email" id="email" name="email" placeholder="sample@mail.com" required="required">
           </li>
           <li>
             <label for="message" class="animated pulse">Message</label>
             <textarea id="message" name="message" required="required"></textarea>
           </li>
+          <div class="field"></div>
+          <div data-netlify-recaptcha="true"></div>
         </ul>
         <input type="submit">
       </form>
