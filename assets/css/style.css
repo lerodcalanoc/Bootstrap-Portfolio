@@ -184,6 +184,7 @@ body {
     background:red;
     opacity: 0.8;
     border-bottom: 0;
+    border-radius: 10px
   
   }
   
@@ -234,5 +235,11 @@ body {
     cursor: pointer;
     background: red;
     border: 0 none;
+    border-radius: 5px
+    
   }
   
+  a:hover {
+    background-color: red
+    
+  }
